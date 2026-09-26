@@ -1652,3 +1652,5 @@ html.mobile-ui .gameActions .puzzleExit{min-width:0;font-size:9px;line-height:1.
 .feedbackNotice strong,.feedbackNotice span{display:block}
 .feedbackNotice .feedbackEmail{display:inline-block;padding:6px 0;color:#175bb5;font-weight:700;overflow-wrap:anywhere;user-select:text;-webkit-user-select:text}
 
+.feedbackNotice .testingVersionLink{display:inline-block;padding:10px 4px;color:#175bb5;font-weight:700;text-decoration:underline;text-underline-offset:3px}
+.feedbackNotice .testingVersionLink:focus-visible{outline:2px solid #175bb5;outline-offset:2px;border-radius:4px}
