@@ -1654,3 +1654,82 @@ html.mobile-ui .gameActions .puzzleExit{min-width:0;font-size:9px;line-height:1.
 
 .feedbackNotice .testingVersionLink{display:inline-block;padding:10px 4px;color:#175bb5;font-weight:700;text-decoration:underline;text-underline-offset:3px}
 .feedbackNotice .testingVersionLink:focus-visible{outline:2px solid #175bb5;outline-offset:2px;border-radius:4px}
+
+/* =========================================================
+   FIX ПАРЫ / ТРОЙКИ — мобильные
+   ========================================================= */
+
+html.mobile-ui #app:has(#aimPanel.multiPlayerFormat){
+  grid-template-rows:40px minmax(0,1fr) 150px!important;
+}
+
+html.mobile-ui #app #aimPanel.multiPlayerFormat{
+  height:150px!important;
+  min-height:150px!important;
+  max-height:150px!important;
+  overflow:hidden!important;
+}
+
+html.mobile-ui #app:has(#aimPanel.multiPlayerFormat #legacySliders:not([hidden])){
+  grid-template-rows:40px minmax(0,1fr) 196px!important;
+}
+
+html.mobile-ui #app #aimPanel.multiPlayerFormat:has(#legacySliders:not([hidden])){
+  height:196px!important;
+  min-height:196px!important;
+  max-height:196px!important;
+  overflow:hidden!important;
+}
+
+html.mobile-ui #app:has(#aimPanel.multiPlayerFormat.screenButtons){
+  grid-template-rows:40px minmax(0,1fr) 214px!important;
+}
+
+html.mobile-ui #app #aimPanel.multiPlayerFormat.screenButtons{
+  height:214px!important;
+  min-height:214px!important;
+  max-height:214px!important;
+}
+
+html.mobile-ui #app #aimPanel.multiPlayerFormat .playerChoiceWrap{
+  height:58px!important;
+  min-height:58px!important;
+  margin:0 0 4px!important;
+  overflow:hidden!important;
+}
+
+html.mobile-ui #app #aimPanel.multiPlayerFormat .playerChoiceWrap.hidden{
+  display:block!important;
+  height:58px!important;
+  min-height:58px!important;
+  visibility:hidden!important;
+  pointer-events:none!important;
+}
+
+html.mobile-ui #app #aimPanel.multiPlayerFormat .playerChoices{
+  margin:0!important;
+  gap:4px!important;
+}
+
+html.mobile-ui #app #aimPanel.multiPlayerFormat .playerChoices button{
+  height:30px!important;
+  min-height:30px!important;
+  padding:0 3px!important;
+  font-size:9px!important;
+}
+
+
+/* =========================================================
+   FIX ПАРЫ / ТРОЙКИ — iPad landscape / desktop
+   ========================================================= */
+
+html.desktop-ui #app:has(#aimPanel.multiPlayerFormat){
+  grid-template-rows:57px minmax(0,1fr) 164px!important;
+}
+
+html.desktop-ui #app #aimPanel.multiPlayerFormat{
+  height:164px!important;
+  min-height:164px!important;
+  max-height:164px!important;
+  overflow:hidden!important;
+}
